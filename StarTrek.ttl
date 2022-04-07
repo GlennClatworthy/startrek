@@ -1,0 +1,56 @@
+# baseURI: http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117
+
+@prefix : <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117>
+  rdf:type owl:Ontology ;
+.
+:Ear_Type
+  rdf:type owl:Class ;
+  rdfs:label "Ear Type" ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Human
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+  owl:hasEarType :Rounded ;
+.
+:Humanoid
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organism_Type ;
+.
+:Klingon
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
+:Organism_Type
+  rdf:type owl:Class ;
+.
+:Pointed
+  rdf:type owl:Class ;
+  rdfs:label "Pointed" ;
+  rdfs:subClassOf :Ear_Type ;
+.
+:Rounded
+  rdf:type owl:Class ;
+  rdfs:label "Rounded" ;
+  rdfs:subClassOf :Ear_Type ;
+.
+:Spiked
+  rdf:type owl:Class ;
+  rdfs:label "Spiked" ;
+  rdfs:subClassOf :Ear_Type ;
+.
+:Vulcan
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
+owl:hasEarType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has ear type" ;
+.
