@@ -112,6 +112,15 @@
 	rdfs:comment "U.S.S Archon NCC 189"@en ;
 	.
 
+:NCC189_1
+	a
+		owl:NamedIndividual ,
+		:Daedalus_Class
+		;
+	rdfs:label "NCC 189"@en ;
+	rdfs:comment "U.S.S Archon NCC 189"@en ;
+	.
+
 :NCC_1701D
 	a
 		owl:NamedIndividual ,
