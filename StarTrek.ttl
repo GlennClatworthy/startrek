@@ -94,6 +94,15 @@
 	rdfs:comment "U.S.S. Enterprise NCC 1701/A"@en ;
 	.
 
+:NCC173
+	a
+		owl:NamedIndividual ,
+		:Daedalus_Class
+		;
+	rdfs:label "NCC 173"@en ;
+	rdfs:comment "U.S.S Essex NCC 173"@en ;
+	.
+
 :NCC176
 	a
 		owl:NamedIndividual ,
@@ -104,15 +113,6 @@
 	.
 
 :NCC189
-	a
-		owl:NamedIndividual ,
-		:Daedalus_Class
-		;
-	rdfs:label "NCC 189"@en ;
-	rdfs:comment "U.S.S Archon NCC 189"@en ;
-	.
-
-:NCC189_1
 	a
 		owl:NamedIndividual ,
 		:Daedalus_Class
