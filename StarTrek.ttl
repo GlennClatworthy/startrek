@@ -1,138 +1,126 @@
+# baseURI: http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117
+
+@base <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> .
 @prefix : <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> .
 
-<http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> rdf:type owl:Ontology .
+<http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117>
+	a owl:Ontology ;
+	.
 
-#################################################################
-#    Object Properties
-#################################################################
+:Andorian
+	a owl:Class ;
+	rdfs:subClassOf :Humanoid ;
+	.
 
-###  http://www.w3.org/2002/07/owl#hasEarType
-owl:hasEarType rdf:type owl:ObjectProperty ;
-               rdfs:label "has ear type" .
+:Bajoran
+	a owl:Class ;
+	rdfs:subClassOf :Humanoid ;
+	.
 
+:Borg
+	a owl:Class ;
+	rdfs:subClassOf :Mixed ;
+	rdfs:label "Borg" ;
+	.
 
-#################################################################
-#    Classes
-#################################################################
+:Constitution_Class
+	a owl:Class ;
+	rdfs:subClassOf :Ship_Type ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Andorian
-:Andorian rdf:type owl:Class ;
-          rdfs:subClassOf :Humanoid .
+:Ear_Type
+	a owl:Class ;
+	rdfs:subClassOf owl:Thing ;
+	rdfs:label "Ear Type" ;
+	.
 
+:Galaxy_Class
+	a owl:Class ;
+	rdfs:subClassOf :Constitution_Class ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Bajoran
-:Bajoran rdf:type owl:Class ;
-         rdfs:subClassOf :Humanoid .
+:Horta
+	a owl:Class ;
+	rdfs:subClassOf :Silicon ;
+	.
 
+:Human
+	a
+		owl:NamedIndividual ,
+		owl:Class
+		;
+	rdfs:subClassOf :Humanoid ;
+	owl:hasEarType :Rounded ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Borg
-:Borg rdf:type owl:Class ;
-      rdfs:subClassOf :Mixed ;
-      rdfs:label "Borg" .
+:Humanoid
+	a owl:Class ;
+	rdfs:subClassOf :Organism_Type ;
+	.
 
+:Klingon
+	a owl:Class ;
+	rdfs:subClassOf :Humanoid ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Constitution_Class
-:Constitution_Class rdf:type owl:Class ;
-                    rdfs:subClassOf :Ship_Type .
+:Mixed
+	a owl:Class ;
+	rdfs:subClassOf :Organism_Type ;
+	rdfs:label "Mixed" ;
+	.
 
+:Organism_Type
+	a owl:Class ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Ear_Type
-:Ear_Type rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing ;
-          rdfs:label "Ear Type" .
+:Pointed
+	a owl:Class ;
+	rdfs:subClassOf :Ear_Type ;
+	rdfs:label "Pointed" ;
+	.
 
+:Romulan
+	a owl:Class ;
+	rdfs:subClassOf :Humanoid ;
+	rdfs:label "Romulan" ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Horta
-:Horta rdf:type owl:Class ;
-       rdfs:subClassOf :Silicon .
+:Rounded
+	a
+		owl:NamedIndividual ,
+		owl:Class
+		;
+	rdfs:subClassOf :Ear_Type ;
+	rdfs:label "Rounded" ;
+	.
 
+:Ship_Type
+	a owl:Class ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Human
-:Human rdf:type owl:Class ;
-       rdfs:subClassOf :Humanoid .
+:Silicon
+	a owl:Class ;
+	rdfs:subClassOf :Organism_Type ;
+	.
 
+:Spiked
+	a owl:Class ;
+	rdfs:subClassOf :Ear_Type ;
+	rdfs:label "Spiked" ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Humanoid
-:Humanoid rdf:type owl:Class ;
-          rdfs:subClassOf :Organism_Type .
+:Vulcan
+	a owl:Class ;
+	rdfs:subClassOf :Humanoid ;
+	.
 
+owl:hasEarType
+	a owl:ObjectProperty ;
+	rdfs:label "has ear type" ;
+	.
 
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Klingon
-:Klingon rdf:type owl:Class ;
-         rdfs:subClassOf :Humanoid .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Mixed
-:Mixed rdf:type owl:Class ;
-       rdfs:subClassOf :Organism_Type ;
-       rdfs:label "Mixed" .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Organism_Type
-:Organism_Type rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Pointed
-:Pointed rdf:type owl:Class ;
-         rdfs:subClassOf :Ear_Type ;
-         rdfs:label "Pointed" .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Romulan
-:Romulan rdf:type owl:Class ;
-         rdfs:subClassOf :Humanoid ;
-         rdfs:label "Romulan" .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Rounded
-:Rounded rdf:type owl:Class ;
-         rdfs:subClassOf :Ear_Type .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Ship_Type
-:Ship_Type rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Silicon
-:Silicon rdf:type owl:Class ;
-         rdfs:subClassOf :Organism_Type .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Spiked
-:Spiked rdf:type owl:Class ;
-        rdfs:subClassOf :Ear_Type ;
-        rdfs:label "Spiked" .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Vulcan
-:Vulcan rdf:type owl:Class ;
-        rdfs:subClassOf :Humanoid .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Human
-:Human rdf:type owl:NamedIndividual ;
-       owl:hasEarType :Rounded .
-
-
-###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Rounded
-:Rounded rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:Rounded rdfs:label "Rounded" .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
