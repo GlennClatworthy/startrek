@@ -90,22 +90,10 @@
   rdf:type owl:Class ;
   rdfs:subClassOf :Organism_Type ;
 .
-:SoTired
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Test_Class ;
-  owl:disjointWith :Something_Trivial ;
-.
-:Something_Trivial
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Test_Class ;
-.
 :Spiked
   rdf:type owl:Class ;
   rdfs:label "Spiked" ;
   rdfs:subClassOf :Ear_Type ;
-.
-:Test_Class
-  rdf:type owl:Class ;
 .
 :Vulcan
   rdf:type owl:Class ;
