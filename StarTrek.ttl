@@ -108,6 +108,11 @@
 	rdfs:subClassOf :Organism_Type ;
 	.
 
+:SoTired
+	a owl:Class ;
+	rdfs:subClassOf :Test_Class ;
+	.
+
 :Spiked
 	a owl:Class ;
 	rdfs:subClassOf :Ear_Type ;
