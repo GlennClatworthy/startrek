@@ -111,6 +111,12 @@
 :SoTired
 	a owl:Class ;
 	rdfs:subClassOf :Test_Class ;
+	owl:disjointWith :Something_Trivial ;
+	.
+
+:Something_Trivial
+	a owl:Class ;
+	rdfs:subClassOf :Test_Class ;
 	.
 
 :Spiked
