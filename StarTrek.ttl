@@ -41,7 +41,7 @@
 
 :Galaxy_Class
 	a owl:Class ;
-	rdfs:subClassOf :Constitution_Class ;
+	rdfs:subClassOf :Ship_Type ;
 	.
 
 :Horta
