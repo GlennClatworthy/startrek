@@ -114,6 +114,10 @@
 	rdfs:label "Spiked" ;
 	.
 
+:Test_Class
+	a owl:Class ;
+	.
+
 :Vulcan
 	a owl:Class ;
 	rdfs:subClassOf :Humanoid ;
