@@ -170,6 +170,11 @@ owl:hasEarType rdf:type owl:ObjectProperty ;
          rdfs:label "Galileo" .
 
 
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo_III
+:Galileo_III rdf:type owl:NamedIndividual ,
+                      :Galileo_Type .
+
+
 ###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC1701
 :NCC1701 rdf:type owl:NamedIndividual ,
                   :Constitution_Class ;
