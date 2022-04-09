@@ -154,6 +154,11 @@ owl:hasEarType rdf:type owl:ObjectProperty ;
         rdfs:subClassOf :Humanoid .
 
 
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#WorkBee
+:WorkBee rdf:type owl:Class ;
+         rdfs:subClassOf :Ship_Type .
+
+
 #################################################################
 #    Individuals
 #################################################################
