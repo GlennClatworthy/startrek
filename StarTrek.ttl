@@ -141,6 +141,10 @@
   rdf:type owl:Class ;
   rdfs:subClassOf :Ear_Type ;
 .
+:Schmengy
+  rdf:type :Shuttlecraft ;
+  rdfs:label "Schmengy" ;
+.
 :Ship_Type
   rdf:type owl:Class ;
 .
