@@ -76,6 +76,11 @@ owl:hasEarType rdf:type owl:ObjectProperty ;
               rdfs:subClassOf :Ship_Type .
 
 
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo_Type
+:Galileo_Type rdf:type owl:Class ;
+              rdfs:subClassOf :Shuttlecraft .
+
+
 ###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Horta
 :Horta rdf:type owl:Class ;
        rdfs:subClassOf :Silicon .
@@ -152,6 +157,11 @@ owl:hasEarType rdf:type owl:ObjectProperty ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Copernicus
+:Copernicus rdf:type owl:NamedIndividual ,
+                     :Galileo_Type .
+
 
 ###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo
 :Galileo rdf:type owl:NamedIndividual ,
