@@ -1,6 +1,5 @@
 # baseURI: http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117
 
-@base <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> .
 @prefix : <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,174 +8,142 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117>
-	a owl:Ontology ;
-	.
-
+  rdf:type owl:Ontology ;
+.
 :Andorian
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
 :Bajoran
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
 :Borg
-	a owl:Class ;
-	rdfs:subClassOf :Mixed ;
-	rdfs:label "Borg" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Borg" ;
+  rdfs:subClassOf :Mixed ;
+.
 :Constitution_Class
-	a owl:Class ;
-	rdfs:subClassOf :Ship_Type ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Ship_Type ;
+.
 :Daedalus_Class
-	a owl:Class ;
-	rdfs:subClassOf :Ship_Type ;
-	rdfs:label "Daedalus Class" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Daedalus Class" ;
+  rdfs:subClassOf :Ship_Type ;
+.
 :Ear_Type
-	a owl:Class ;
-	rdfs:subClassOf owl:Thing ;
-	rdfs:label "Ear Type" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Ear Type" ;
+  rdfs:subClassOf owl:Thing ;
+.
 :Galaxy_Class
-	a owl:Class ;
-	rdfs:subClassOf :Ship_Type ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Ship_Type ;
+.
+:Galileo
+  rdf:type :Shuttlecraft ;
+  rdfs:label "Galileo" ;
+.
 :Horta
-	a owl:Class ;
-	rdfs:subClassOf :Silicon ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Silicon ;
+.
 :Human
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
 :Humanoid
-	a owl:Class ;
-	rdfs:subClassOf :Organism_Type ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organism_Type ;
+.
 :Klingon
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
 :Mixed
-	a owl:Class ;
-	rdfs:subClassOf :Organism_Type ;
-	rdfs:label "Mixed" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Mixed" ;
+  rdfs:subClassOf :Organism_Type ;
+.
 :NCC1701
-	a
-		owl:NamedIndividual ,
-		:Constitution_Class
-		;
-	rdfs:label "NCC 1701"@en ;
-	rdfs:comment "U.S.S. Enterprise NCC 1701"@en ;
-	.
-
+  rdf:type :Constitution_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S. Enterprise NCC 1701"@en ;
+  rdfs:label "NCC 1701"@en ;
+.
 :NCC1701A
-	a
-		owl:NamedIndividual ,
-		:Constitution_Class
-		;
-	rdfs:label "NCC 1701/A"@en ;
-	rdfs:comment "U.S.S. Enterprise NCC 1701/A"@en ;
-	.
-
+  rdf:type :Constitution_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S. Enterprise NCC 1701/A"@en ;
+  rdfs:label "NCC 1701/A"@en ;
+.
 :NCC173
-	a
-		owl:NamedIndividual ,
-		:Daedalus_Class
-		;
-	rdfs:label "NCC 173"@en ;
-	rdfs:comment "U.S.S Essex NCC 173"@en ;
-	.
-
+  rdf:type :Daedalus_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S Essex NCC 173"@en ;
+  rdfs:label "NCC 173"@en ;
+.
 :NCC176
-	a
-		owl:NamedIndividual ,
-		:Daedalus_Class
-		;
-	rdfs:label "NCC 176" ;
-	rdfs:comment "U.S.S. Horizon NCC 176" ;
-	.
-
+  rdf:type :Daedalus_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S. Horizon NCC 176" ;
+  rdfs:label "NCC 176" ;
+.
 :NCC189
-	a
-		owl:NamedIndividual ,
-		:Daedalus_Class
-		;
-	rdfs:label "NCC 189"@en ;
-	rdfs:comment "U.S.S Archon NCC 189"@en ;
-	.
-
+  rdf:type :Daedalus_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S Archon NCC 189"@en ;
+  rdfs:label "NCC 189"@en ;
+.
 :NCC_1701D
-	a
-		owl:NamedIndividual ,
-		:Galaxy_Class
-		;
-	rdfs:label "NCC 1701/D"@en ;
-	rdfs:comment "U.S.S. Enterprise NCC 1701/D"@en ;
-	.
-
+  rdf:type :Galaxy_Class ;
+  rdf:type owl:NamedIndividual ;
+  rdfs:comment "U.S.S. Enterprise NCC 1701/D"@en ;
+  rdfs:label "NCC 1701/D"@en ;
+.
 :Organism_Type
-	a owl:Class ;
-	.
-
+  rdf:type owl:Class ;
+.
 :Pointed
-	a owl:Class ;
-	rdfs:subClassOf :Ear_Type ;
-	rdfs:label "Pointed" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Pointed" ;
+  rdfs:subClassOf :Ear_Type ;
+.
 :Romulan
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	rdfs:label "Romulan" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Romulan" ;
+  rdfs:subClassOf :Humanoid ;
+.
 :Rounded
-	a owl:Class ;
-	rdfs:subClassOf :Ear_Type ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Ear_Type ;
+.
 :Ship_Type
-	a owl:Class ;
-	.
-
+  rdf:type owl:Class ;
+.
+:Shuttlecraft
+  rdf:type owl:Class ;
+  rdfs:label "Shuttlecraft" ;
+  rdfs:subClassOf :Ship_Type ;
+.
 :Silicon
-	a owl:Class ;
-	rdfs:subClassOf :Organism_Type ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Organism_Type ;
+.
 :Spiked
-	a owl:Class ;
-	rdfs:subClassOf :Ear_Type ;
-	rdfs:label "Spiked" ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:label "Spiked" ;
+  rdfs:subClassOf :Ear_Type ;
+.
 :Vulcan
-	a owl:Class ;
-	rdfs:subClassOf :Humanoid ;
-	.
-
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Humanoid ;
+.
 :numberOfNacelles
-	a owl:DatatypeProperty ;
-	.
-
+  rdf:type owl:DatatypeProperty ;
+.
 owl:hasEarType
-	a owl:ObjectProperty ;
-	rdfs:label "has ear type" ;
-	.
-
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has ear type" ;
+.
