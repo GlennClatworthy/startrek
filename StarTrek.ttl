@@ -1,178 +1,226 @@
-# baseURI: http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117
-
 @prefix : <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> .
 
-<http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117>
-  rdf:type owl:Ontology ;
-.
-:Andorian
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Humanoid ;
-.
-:Bajoran
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Humanoid ;
-.
-:Borg
-  rdf:type owl:Class ;
-  rdfs:label "Borg" ;
-  rdfs:subClassOf :Mixed ;
-.
-:ClassF
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Shuttlecraft ;
-.
-:Constitution_Class
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Ship_Type ;
-.
-:Copernicus
-  rdf:type :Galileo_Type ;
-  rdf:type owl:NamedIndividual ;
-.
-:Daedalus_Class
-  rdf:type owl:Class ;
-  rdfs:label "Daedalus Class" ;
-  rdfs:subClassOf :Ship_Type ;
-.
-:Ear_Type
-  rdf:type owl:Class ;
-  rdfs:label "Ear Type" ;
-  rdfs:subClassOf owl:Thing ;
-.
-:Galaxy_Class
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Ship_Type ;
-.
-:Galileo
-  rdf:type :ClassF ;
-  rdf:type owl:NamedIndividual ;
-  :assignedTo :NCC1701 ;
-  rdfs:label "Galileo" ;
-.
-:Galileo_III
-  rdf:type :Galileo_Type ;
-  rdf:type owl:NamedIndividual ;
-.
-:Galileo_Type
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Shuttlecraft ;
-.
-:Horta
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Silicon ;
-.
-:Human
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Humanoid ;
-.
-:Humanoid
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Organism_Type ;
-.
-:Klingon
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Humanoid ;
-.
-:Melvin
-  rdf:type :Galileo_Type ;
-  rdfs:label "Melvin" ;
-.
-:Mixed
-  rdf:type owl:Class ;
-  rdfs:label "Mixed" ;
-  rdfs:subClassOf :Organism_Type ;
-.
-:NCC1701
-  rdf:type :Constitution_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S. Enterprise NCC 1701"@en ;
-  rdfs:label "NCC 1701"@en ;
-.
-:NCC1701A
-  rdf:type :Constitution_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S. Enterprise NCC 1701/A"@en ;
-  rdfs:label "NCC 1701/A"@en ;
-.
-:NCC173
-  rdf:type :Daedalus_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S Essex NCC 173"@en ;
-  rdfs:label "NCC 173"@en ;
-.
-:NCC176
-  rdf:type :Daedalus_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S. Horizon NCC 176" ;
-  rdfs:label "NCC 176" ;
-.
-:NCC189
-  rdf:type :Daedalus_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S Archon NCC 189"@en ;
-  rdfs:label "NCC 189"@en ;
-.
-:NCC_1701D
-  rdf:type :Galaxy_Class ;
-  rdf:type owl:NamedIndividual ;
-  rdfs:comment "U.S.S. Enterprise NCC 1701/D"@en ;
-  rdfs:label "NCC 1701/D"@en ;
-.
-:Organism_Type
-  rdf:type owl:Class ;
-.
-:Pointed
-  rdf:type owl:Class ;
-  rdfs:label "Pointed" ;
-  rdfs:subClassOf :Ear_Type ;
-.
-:Romulan
-  rdf:type owl:Class ;
-  rdfs:label "Romulan" ;
-  rdfs:subClassOf :Humanoid ;
-.
-:Rounded
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Ear_Type ;
-.
-:Schmengy
-  rdf:type :Shuttlecraft ;
-  rdfs:label "Schmengy" ;
-.
-:Ship_Type
-  rdf:type owl:Class ;
-.
-:Shuttlecraft
-  rdf:type owl:Class ;
-  rdfs:label "Shuttlecraft" ;
-  rdfs:subClassOf :Ship_Type ;
-.
-:Silicon
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Organism_Type ;
-.
-:Spiked
-  rdf:type owl:Class ;
-  rdfs:label "Spiked" ;
-  rdfs:subClassOf :Ear_Type ;
-.
-:Vulcan
-  rdf:type owl:Class ;
-  rdfs:subClassOf :Humanoid ;
-.
-:assignedTo
-  rdf:type owl:ObjectProperty ;
-.
-:numberOfNacelles
-  rdf:type owl:DatatypeProperty ;
-.
-owl:hasEarType
-  rdf:type owl:ObjectProperty ;
-  rdfs:label "has ear type" ;
-.
+<http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#assignedTo
+:assignedTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2002/07/owl#hasEarType
+owl:hasEarType rdf:type owl:ObjectProperty ;
+               rdfs:label "has ear type" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#numberOfNacelles
+:numberOfNacelles rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Andorian
+:Andorian rdf:type owl:Class ;
+          rdfs:subClassOf :Humanoid .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Bajoran
+:Bajoran rdf:type owl:Class ;
+         rdfs:subClassOf :Humanoid .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Borg
+:Borg rdf:type owl:Class ;
+      rdfs:subClassOf :Mixed ;
+      rdfs:label "Borg" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#ClassF
+:ClassF rdf:type owl:Class ;
+        rdfs:subClassOf :Shuttlecraft .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Constitution_Class
+:Constitution_Class rdf:type owl:Class ;
+                    rdfs:subClassOf :Ship_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Daedalus_Class
+:Daedalus_Class rdf:type owl:Class ;
+                rdfs:subClassOf :Ship_Type ;
+                rdfs:label "Daedalus Class" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Ear_Type
+:Ear_Type rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:label "Ear Type" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galaxy_Class
+:Galaxy_Class rdf:type owl:Class ;
+              rdfs:subClassOf :Ship_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo_Type
+:Galileo_Type rdf:type owl:Class ;
+              rdfs:subClassOf :Shuttlecraft .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Horta
+:Horta rdf:type owl:Class ;
+       rdfs:subClassOf :Silicon .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Humanoid .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Humanoid
+:Humanoid rdf:type owl:Class ;
+          rdfs:subClassOf :Organism_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Klingon
+:Klingon rdf:type owl:Class ;
+         rdfs:subClassOf :Humanoid .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Mixed
+:Mixed rdf:type owl:Class ;
+       rdfs:subClassOf :Organism_Type ;
+       rdfs:label "Mixed" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Organism_Type
+:Organism_Type rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Pointed
+:Pointed rdf:type owl:Class ;
+         rdfs:subClassOf :Ear_Type ;
+         rdfs:label "Pointed" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Romulan
+:Romulan rdf:type owl:Class ;
+         rdfs:subClassOf :Humanoid ;
+         rdfs:label "Romulan" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Rounded
+:Rounded rdf:type owl:Class ;
+         rdfs:subClassOf :Ear_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Ship_Type
+:Ship_Type rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Shuttlecraft
+:Shuttlecraft rdf:type owl:Class ;
+              rdfs:subClassOf :Ship_Type ;
+              rdfs:label "Shuttlecraft" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Silicon
+:Silicon rdf:type owl:Class ;
+         rdfs:subClassOf :Organism_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Spiked
+:Spiked rdf:type owl:Class ;
+        rdfs:subClassOf :Ear_Type ;
+        rdfs:label "Spiked" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Vulcan
+:Vulcan rdf:type owl:Class ;
+        rdfs:subClassOf :Humanoid .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Copernicus
+:Copernicus rdf:type owl:NamedIndividual ,
+                     :Galileo_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo
+:Galileo rdf:type owl:NamedIndividual ,
+                  :ClassF ;
+         :assignedTo :NCC1701 ;
+         rdfs:label "Galileo" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Galileo_III
+:Galileo_III rdf:type owl:NamedIndividual ,
+                      :Galileo_Type .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#Melvin
+:Melvin rdf:type owl:NamedIndividual ,
+                 :Galileo_Type ;
+        rdfs:label "Melvin" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC1701
+:NCC1701 rdf:type owl:NamedIndividual ,
+                  :Constitution_Class ;
+         rdfs:comment "U.S.S. Enterprise NCC 1701"@en ;
+         rdfs:label "NCC 1701"@en .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC1701A
+:NCC1701A rdf:type owl:NamedIndividual ,
+                   :Constitution_Class ;
+          rdfs:comment "U.S.S. Enterprise NCC 1701/A"@en ;
+          rdfs:label "NCC 1701/A"@en .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC173
+:NCC173 rdf:type owl:NamedIndividual ,
+                 :Daedalus_Class ;
+        rdfs:comment "U.S.S Essex NCC 173"@en ;
+        rdfs:label "NCC 173"@en .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC176
+:NCC176 rdf:type owl:NamedIndividual ,
+                 :Daedalus_Class ;
+        rdfs:comment "U.S.S. Horizon NCC 176" ;
+        rdfs:label "NCC 176" .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC189
+:NCC189 rdf:type owl:NamedIndividual ,
+                 :Daedalus_Class ;
+        rdfs:comment "U.S.S Archon NCC 189"@en ;
+        rdfs:label "NCC 189"@en .
+
+
+###  http://www.semanticweb.org/macbookpro/ontologies/2022/3/untitled-ontology-117#NCC_1701D
+:NCC_1701D rdf:type owl:NamedIndividual ,
+                    :Galaxy_Class ;
+           rdfs:comment "U.S.S. Enterprise NCC 1701/D"@en ;
+           rdfs:label "NCC 1701/D"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
