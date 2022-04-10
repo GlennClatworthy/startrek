@@ -192,6 +192,11 @@
 	rdfs:subClassOf :Ear_Type ;
 	.
 
+:Scooty_Puff_Jr
+	a :Space_Scooter ;
+	rdfs:label "Scooty Puff Jr" ;
+	.
+
 :Ship_Type
 	a owl:Class ;
 	.
