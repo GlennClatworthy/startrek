@@ -193,8 +193,18 @@
 	.
 
 :Scooty_Puff_Jr
-	a :Space_Scooter ;
+	a
+		owl:NamedIndividual ,
+		:Space_Scooter
+		;
 	rdfs:label "Scooty Puff Jr" ;
+	.
+
+:Scooty_Puff_Sr
+	a
+		owl:NamedIndividual ,
+		:Space_Scooter
+		;
 	.
 
 :Ship_Type
