@@ -181,6 +181,11 @@
 	rdfs:label "Pointed" ;
 	.
 
+:Razor_4500XT
+	a :Space_Scooter ;
+	rdfs:label "Razor 4500XT" ;
+	.
+
 :Romulan
 	a owl:Class ;
 	rdfs:subClassOf :Humanoid ;
