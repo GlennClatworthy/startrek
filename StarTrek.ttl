@@ -51,6 +51,13 @@
 	rdfs:label "Daedalus Class" ;
 	.
 
+:Dumbledore
+	a
+		owl:NamedIndividual ,
+		:ClassF
+		;
+	.
+
 :Ear_Type
 	a owl:Class ;
 	rdfs:subClassOf owl:Thing ;
@@ -182,7 +189,10 @@
 	.
 
 :Razor_4500XT
-	a :Space_Scooter ;
+	a
+		owl:NamedIndividual ,
+		:Space_Scooter
+		;
 	rdfs:label "Razor 4500XT" ;
 	.
 
